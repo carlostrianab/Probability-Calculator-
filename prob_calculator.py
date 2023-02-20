@@ -75,7 +75,18 @@ def experiment(hat, expected_balls, num_balls_drawn, num_experiments):
 
 hat = Hat(blue=4, red=2, green=6)
 
+#Testing the functions 
 print('Showing hat contents')
 print(hat.contents)
 print('Printing the drawn balls')
 print(hat.draw(2))
+
+
+e_balls = {"blue":2, "red":1}
+num_balls = 5
+num_experiments = 100
+print('The probability of having ' + str(e_balls['blue']) + ' blue balls and ' + str(e_balls['red']) + ' red ball drawn from our hat is ')
+print(experiment(hat,e_balls,num_balls,num_experiments))
+
+
+
